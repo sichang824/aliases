@@ -16,12 +16,17 @@ wget -qO- https://raw.githubusercontent.com/sichang824/aliases/main/install.sh |
 
 ### Temporary install (current shell only):
 ```bash
-curl -fsSL https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | TEMP=1 zsh
+TEMP=1 curl -fsSL https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | zsh
 ```
 
 Or with wget:
 ```bash
-wget -qO- https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | TEMP=1 zsh
+TEMP=1 wget -qO- https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | zsh
+```
+
+Alternative (pass argument):
+```bash
+curl -fsSL https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | zsh -s temp
 ```
 
 ### Manual install:

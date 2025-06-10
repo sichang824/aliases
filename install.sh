@@ -1,10 +1,10 @@
 #!/bin/zsh
 # Aliases installer script
 # Permanent install: curl -fsSL https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | zsh
-# Temporary (current shell only): curl -fsSL https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | TEMP=1 zsh
+# Temporary (current shell only): TEMP=1 curl -fsSL https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | zsh
 
-# Check if temporary mode
-if [[ -n "$TEMP" ]]; then
+# Check if temporary mode (check both $TEMP and command line args)
+if [[ -n "$TEMP" ]] || [[ "$1" == "temp" ]] || [[ "$1" == "TEMP" ]]; then
     echo "Loading aliases temporarily (current shell only)..."
     
     # Download and source directly without saving
