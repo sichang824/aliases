@@ -6,17 +6,17 @@ A comprehensive collection of useful shell aliases for zsh, optimized for cross-
 
 ### One-line install (recommended):
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/aliases/main/aliases.sh | zsh
+curl -fsSL https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | zsh
 ```
 
 Or with wget:
 ```bash
-wget -qO- https://raw.githubusercontent.com/YOUR_USERNAME/aliases/main/aliases.sh | zsh
+wget -qO- https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | zsh
 ```
 
 ### Manual install:
 ```bash
-curl -o ~/.aliases https://raw.githubusercontent.com/YOUR_USERNAME/aliases/main/aliases.sh
+curl -o ~/.aliases https://raw.githubusercontent.com/sichang824/aliases/main/.aliases
 echo "source ~/.aliases" >> ~/.zshrc
 source ~/.zshrc
 ```
