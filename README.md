@@ -4,7 +4,7 @@ A comprehensive collection of useful shell aliases for zsh, optimized for cross-
 
 ## Quick Install
 
-### One-line install (recommended):
+### Permanent install (recommended):
 ```bash
 curl -fsSL https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | zsh
 ```
@@ -12,6 +12,16 @@ curl -fsSL https://raw.githubusercontent.com/sichang824/aliases/main/install.sh 
 Or with wget:
 ```bash
 wget -qO- https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | zsh
+```
+
+### Temporary install (current shell only):
+```bash
+curl -fsSL https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | TEMP=1 zsh
+```
+
+Or with wget:
+```bash
+wget -qO- https://raw.githubusercontent.com/sichang824/aliases/main/install.sh | TEMP=1 zsh
 ```
 
 ### Manual install:
